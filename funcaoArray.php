@@ -15,8 +15,16 @@ $cardapio [1] = "Suco";
 $cardapio [2] = "Doce";
 $cardapio [3] = "Salgada";
 
+print_r($cores);
+echo "<br>";
+print_r($fruta);
+echo "<br>";
+print_r($dados);
+echo "<br>";
+print_r($cardapio);
+
 echo "<hr><br>";
-echo "Funções para Array <br><hr>";
+echo "FUNÇÕES PARA ARRAY <br><br>";
 
 //funções para array
 //adicionando valor no final do array
@@ -25,7 +33,7 @@ print_r($fruta);
 echo "<hr><br>";
 
 //adicionando valores no inicio do array
-array_unshift($fruta, "MELANCIA", "PITANGA");
+array_unshift($fruta, "melancia", "pitanga");
 print_r($fruta);
 echo "<hr><br>";
 
@@ -41,4 +49,14 @@ print_r($fruta);
 //contando elementos do array
 $contar_elementos = count($fruta);
 
-echo "<p> Quantidade de frutas $fruta </p>";
+echo "<p> Quantidade de frutas $contar_elementos </p>";
+echo "<hr><br>";
+
+//ordenando valores do array (ordem crescente)
+sort($fruta);
+print_r($fruta);
+echo "<br>";
+//ordem decrescente
+rsort($fruta);
+print_r($fruta);
+
